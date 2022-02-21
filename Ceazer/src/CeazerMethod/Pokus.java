@@ -14,7 +14,7 @@ public class Pokus {
         String unos = sc.nextLine();
         System.out.println("Za koliko mijesta zelite da se pomaknu slova: ");
         int shift = sc.nextInt();
-        String ciphertext = "";
+        String sifra = "";
         char alphabet;
         for(int i=0; i < unos.length();i++) 
         {
@@ -31,7 +31,7 @@ public class Pokus {
                 // vrati na pocetak
                 alphabet = (char) (alphabet+'a'-'z'-1);
              }
-             ciphertext = ciphertext + alphabet;
+             sifra = sifra + alphabet;
             }
             
             // ako je izmedu A i Z
@@ -44,14 +44,14 @@ public class Pokus {
                  //vrati na pocetak
                  alphabet = (char) (alphabet+'A'-'Z'-1);
              }
-             ciphertext = ciphertext + alphabet;
+             sifra = sifra + alphabet;
             }
             else {
-             ciphertext = ciphertext + alphabet;   
+            	sifra = sifra + alphabet;   
             }
         
     }
-    System.out.println("Kriptriran tekst: " + ciphertext);
+    System.out.println("Kriptriran tekst: " + sifra);
 	}
 
 }
